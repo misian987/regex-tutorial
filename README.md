@@ -2,6 +2,10 @@
 
 An interactive web-based tutorial for learning regular expressions (regex) step by step. This project provides a hands-on learning experience with real-time feedback and guided lessons.
 
+## Live Demo
+
+Try the tutorial now: [Interactive Regex Tutorial](https://misian987.github.io/regex-tutorial/)
+
 ## Features
 
 - 🎯 Interactive lessons with live pattern matching
@@ -11,7 +15,7 @@ An interactive web-based tutorial for learning regular expressions (regex) step 
 - 📝 Detailed explanations of regex concepts
 - 🎨 Modern, responsive user interface
 
-## Demo
+## Demo Content
 
 The tutorial includes five comprehensive lessons:
 1. Basic Word Matching
@@ -22,16 +26,22 @@ The tutorial includes five comprehensive lessons:
 
 ## Getting Started
 
-### Prerequisites
+### Online Version
+
+Visit [https://misian987.github.io/regex-tutorial/](https://misian987.github.io/regex-tutorial/) to use the tutorial directly in your browser.
+
+### Local Development
+
+#### Prerequisites
 
 - Python 3.6 or higher
 - A modern web browser
 
-### Installation
+#### Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/regex-tutorial.git
+git clone https://github.com/misian987/regex-tutorial.git
 cd regex-tutorial
 ```
 
@@ -40,7 +50,7 @@ cd regex-tutorial
 pip install -r requirements.txt
 ```
 
-### Running the Tutorial
+#### Running Locally
 
 1. Start the local server:
 ```bash
