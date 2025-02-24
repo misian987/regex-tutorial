@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Regex Tutorial</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Interactive Regex Tutorial</h1>
+            <p>Learn regular expressions step by step with hands-on practice</p>
+        </header>
+
+        <main>
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+                <div class="progress-steps">
+                    <div class="step active" data-step="1">1</div>
+                    <div class="step" data-step="2">2</div>
+                    <div class="step" data-step="3">3</div>
+                    <div class="step" data-step="4">4</div>
+                    <div class="step" data-step="5">5</div>
+                </div>
+            </div>
+
+            <div class="lesson-container">
+                <div class="lesson-content">
+                    <h2 id="lessonTitle"></h2>
+                    <div class="concept" id="lessonConcept"></div>
+                    
+                    <div class="practice-section">
+                        <h3>Practice</h3>
+                        <p id="practice"></p>
+                        <div class="test-string">
+                            <strong>Test string:</strong>
+                            <pre><code id="testString" class="language-text"></code></pre>
+                        </div>
+                        
+                        <div class="input-section">
+                            <input type="text" id="userPattern" placeholder="Enter your regex pattern">
+                            <button onclick="checkPattern()" class="submit-btn">Try it!</button>
+                            <button onclick="showSolution()" class="solution-btn" id="solutionBtn">Show Solution</button>
+                        </div>
+                        
+                        <div class="result" id="result">
+                            <div class="matches" id="matches"></div>
+                            <div class="feedback" id="feedback"></div>
+                        </div>
+
+                        <div class="solution-section" id="solutionSection">
+                            <div class="solution-content" id="solutionContent"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navigation">
+                    <button id="prevBtn" onclick="previousLesson()" disabled>Previous</button>
+                    <button id="nextBtn" onclick="nextLesson()" disabled>Next</button>
+                </div>
+            </div>
+        </main>
+
+        <div class="completion-modal" id="completionModal">
+            <div class="modal-content">
+                <h2>🎓 Tutorial Complete!</h2>
+                <p>Your score: <span id="finalScore"></span></p>
+                <div id="completionMessage"></div>
+                <button onclick="restartTutorial()" class="restart-btn">Start Over</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script src="lessons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
